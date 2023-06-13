@@ -3,30 +3,6 @@
     padding: 1rem;
     @extend %grid;
 
-    header{
-        @include header;
-            .navbar-nav .nav-link {
-            @include navbar;}
-        }
-
-        footer{
-         @include footer;
-
-
-            .marca-registrada{
-            @include fuente-small;
-            }
-
-            footer div a{
-            text-decoration:$text-decoration ;
-            }
-
-            .volver{
-            border-radius: 10px;
-            background-color: rgba(240, 196, 180, 0.438);
-            font-size: x-small;}
-        }
-    
     main form fieldset{
         display: inline-block;
         justify-content:center;
@@ -44,6 +20,5 @@
         align-items: center;
 
     }
+
 }
-
-

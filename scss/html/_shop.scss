@@ -1,36 +1,9 @@
-
-
 .contenedor-shop {
     height: 150vh;
     padding: 1rem;
     display: grid;
     grid-template-columns: auto ;
     grid-template-rows: 20% 70% 10% ;
-
-    header{
-        @include header;
-
-            .navbar-nav .nav-link {
-            @include navbar;}
-        }
-
-        footer{
-         @include footer;
-
-
-            .marca-registrada{
-            @include fuente-small;
-            }
-
-            footer div a{
-            text-decoration:$text-decoration ;
-            }
-
-            .volver{
-            border-radius: 10px;
-            background-color: rgba(240, 196, 180, 0.438);
-            font-size: x-small;}
-        }
 
     .main-shop{
         @include main-shop;
@@ -60,6 +33,7 @@
     main div div p{
         @extend %display-align-justify;
     }
+
 }
 
 

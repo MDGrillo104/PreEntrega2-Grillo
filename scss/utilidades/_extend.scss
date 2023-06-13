@@ -1,8 +1,22 @@
+
+
+%header{
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-family: 'Darumadrop One', cursive; 
+    font-size: small;
+    background-color: rgba(0, 0, 0, 0);
+}
+
 %grid{
     display: grid;
     grid-template-columns: auto ;
     grid-template-rows: 25% 60% 15% ;
 }
+
 
 %objeto{
     display: flex;
