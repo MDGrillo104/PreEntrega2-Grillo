@@ -1,0 +1,61 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+@import "../utilidades/mediaqueries";
+
+
+body{
+    /* fondo */
+    background-image: $bg-image;
+    .contenedor-index {
+            height: 100vh;
+            padding: 1rem;
+            @extend %grid;
+
+        header{
+        @include header;
+
+            .navbar-nav .nav-link {
+            @include navbar;}
+        }
+
+        footer{
+         @include footer;
+
+
+            .marca-registrada{
+            @include fuente-small;
+            }
+
+            footer div a{
+            text-decoration:$text-decoration ;
+            }
+
+            .volver{
+            border-radius: 10px;
+            background-color: rgba(240, 196, 180, 0.438);
+            font-size: x-small;}
+        }
+    
+        
+     .bienvenidos{
+        @include bienvenidos(2.5rem);
+        align-items: center;
+        justify-content: center;
+        }
+
+        .bienvenidos1{
+        @include bienvenidos(1rem);
+        }
+
+        main{
+        padding: 0% 10% 0% 10%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        align-items: center;
+        justify-content: center;
+        }
+    }
+}
+

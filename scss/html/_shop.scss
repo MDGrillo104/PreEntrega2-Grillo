@@ -1,0 +1,69 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+@import "../utilidades/mediaqueries";
+
+
+.contenedor-shop {
+    height: 150vh;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: 20% 70% 10% ;
+
+    header{
+        @include header;
+
+            .navbar-nav .nav-link {
+            @include navbar;}
+        }
+
+        footer{
+         @include footer;
+
+
+            .marca-registrada{
+            @include fuente-small;
+            }
+
+            footer div a{
+            text-decoration:$text-decoration ;
+            }
+
+            .volver{
+            border-radius: 10px;
+            background-color: rgba(240, 196, 180, 0.438);
+            font-size: x-small;}
+        }
+
+    .main-shop{
+        @include main-shop;
+    }
+
+    main h1{
+        font-size: 3rem;
+    }
+
+    .caja-shop{
+        padding-bottom: 10%;
+        height: 100vh;
+        display: grid;
+        /*columnas*/
+        grid-template-columns: 100%;
+        /*filas*/
+        grid-template-rows: repeat(8, 10%) ;
+        gap: 1rem;
+        font-family: 'Darumadrop One', cursive;
+    }
+
+    .hijo-shop{
+        background-color: rgba(0, 0, 0, 0.178);
+        @extend %objeto;
+    }
+
+    main div div p{
+        @extend %display-align-justify;
+    }
+}
+
+

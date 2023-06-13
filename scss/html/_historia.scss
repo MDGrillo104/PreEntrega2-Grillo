@@ -1,0 +1,63 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+@import "../utilidades/mediaqueries";
+
+.contenedor-historia{
+    height: 100vh; 
+    padding-top: 2rem;
+    gap: 10px;
+    @extend %grid;
+
+    
+    header{
+        @include header;
+
+            .navbar-nav .nav-link {
+            @include navbar;}
+        }
+
+        footer{
+         @include footer;
+
+
+            .marca-registrada{
+            @include fuente-small;
+            }
+
+            footer div a{
+            text-decoration:$text-decoration ;
+            }
+
+            .volver{
+            border-radius: 10px;
+            background-color: rgba(240, 196, 180, 0.438);
+            font-size: x-small;}
+        }
+
+        .caja-historia{
+            height:60vh;
+            padding: 1rem 0rem 2rem 0rem;
+            display: grid;
+            grid-template-columns: 100% ;
+            grid-template-rows: 50% 50% ;
+            padding-bottom: 10%;
+            gap: 1rem;
+            font-family: 'Darumadrop One', cursive;
+            font-size: 0.65rem;
+        
+            .hijo-historia{
+                background-color: $bg-colour;
+                @extend %objeto;
+                flex-direction: row;
+                }
+
+        
+
+            main div div img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain ;
+                }
+        }
+}

@@ -1,0 +1,52 @@
+@mixin header{
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-family: 'Darumadrop One', cursive; 
+    font-size: small;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@mixin navbar{
+    font-size: small;
+    padding: 0.2rem;
+    margin: 0.05rem;
+    background-color:$bg-colour;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin bienvenidos($font-size){
+    font-size: $font-size;
+    display: flex;
+    text-align: center;
+    text-justify: center;
+    font-family: 'Darumadrop One', cursive;
+}
+
+@mixin footer{
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-bottom: 0;
+    padding: 0.5rem;
+    padding-bottom: 1.5rem;
+    bottom: 0;
+}
+
+@mixin fuente-small{
+    font-size: small;
+    font-family: 'Darumadrop One', cursive;
+}
+
+@mixin main-shop{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    font-family: 'Darumadrop One', cursive;
+}
+

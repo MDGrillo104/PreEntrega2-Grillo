@@ -1,0 +1,49 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+@import "../utilidades/mediaqueries";
+
+.contenedor-fuego{
+    height: 140vh;
+    padding: 1rem;
+    @extend %grid;
+    font-size: 0.75rem;
+
+    
+    header{
+        @include header;
+
+            .navbar-nav .nav-link {
+            @include navbar;}
+        }
+
+        footer{
+         @include footer;
+
+
+            .marca-registrada{
+            @include fuente-small;
+            }
+
+            footer div a{
+            text-decoration:$text-decoration ;
+            }
+
+            .volver{
+            border-radius: 10px;
+            background-color: rgba(240, 196, 180, 0.438);
+            font-size: x-small;}
+        }
+
+    #escritorio{
+        display: none;
+    }
+
+    main div div h2{
+        @extend %display-align-justify;
+    }
+
+    #carouselWithControls{
+        background-color:$bg-colour;
+    }
+}

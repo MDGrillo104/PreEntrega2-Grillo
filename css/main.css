@@ -1,55 +1,165 @@
 /* reset */
-*{
-    margin:0 ;
-    padding:0 ;
-    box-sizing: border-box;
-}
-/* fondo */
-body{
-    background-image: url(../img/grey-aesthetic-desktop-oz7r58cmboaf1948.jpg);
-}
-/* header */
-header{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.contenedor-contactenos, .contenedor-historia, body .contenedor-index, .contenedor-fuego {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 25% 60% 15%; }
+
+.contenedor-historia .caja-historia .hijo-historia, .contenedor-shop .hijo-shop {
+  display: flex;
+  object-fit: contain;
+  text-align: center;
+  object-position: center; }
+
+.contenedor-fuego main div div h2, .contenedor-shop main div div p {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+@media screen and (min-width: 1024px) {
+  .navbar-nav .nav-link {
+    font-size: 2rem;
+    padding: 0.2rem;
+    margin: 0.2rem; }
+  .marca-registrada {
+    font-size: x-large; }
+  footer {
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 1rem 0.2rem 0rem 0.2rem;
+    padding: 0.2rem;
+    bottom: 0; }
+  .volver {
+    border-radius: 10px;
+    background-color: rgba(240, 196, 180, 0.473);
+    font-size: large; }
+  main form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Darumadrop One', cursive; }
+  #carousel-fuego {
+    display: none; }
+  #escritorio {
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    align-items: start;
+    height: 100vh; }
+  .hijo-fuego {
+    height: 10vh;
+    object-fit: contain;
+    padding: 1rem;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 0.9rem; }
+  .contenedor-fuego {
+    height: 140vh;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 25% 60% 15%;
+    font-size: 1rem; }
+  .contenedor-historia {
+    height: 100vh;
+    padding: 1rem; }
+  .caja-historia {
+    height: 60vh;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between; }
+  .hijo-historia {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 0.95rem; }
+  .main-shop {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    font-family: 'Darumadrop One', cursive; }
+  .contenedor-shop {
+    height: 100vh;
+    grid-template-rows: 25% 60% 15%; }
+  .caja-shop {
+    padding-bottom: 10%;
+    height: 100vh;
+    display: grid;
+    /*columnas*/
+    grid-template-columns: repeat(2, 50%);
+    /*filas*/
+    grid-template-rows: repeat(4, 25%);
+    gap: 1rem;
+    font-family: 'Darumadrop One', cursive; }
+  .hijo-shop {
+    height: 12vh;
+    background-color: rgba(0, 0, 0, 0.178);
+    display: flex;
+    object-fit: contain;
+    text-align: center;
+    object-position: center;
+    font-size: 1.5rem; } }
+
+@media screen and (min-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: large;
+    padding: 0.2rem;
+    margin: 0.05rem;
+    background-color: rgba(0, 0, 0, 0.075);
+    align-items: center;
+    align-content: center; }
+  footer {
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 1rem 0.2rem 0rem 0.2rem;
+    padding: 0.2rem;
+    bottom: 0; }
+    footer .marca-registrada {
+      font-size: x-large; }
+    footer .volver {
+      border-radius: 10px;
+      background-color: rgba(240, 196, 180, 0.473);
+      font-size: large; }
+  .caja-historia {
+    font-size: 1rem; }
+  main form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Darumadrop One', cursive; }
+  .hijo-shop {
+    font-size: 1.2rem; } }
+
+.contenedor-contactenos {
+  height: 100vh;
+  padding: 1rem; }
+  .contenedor-contactenos header {
     height: 25vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    font-family: 'Darumadrop One', cursive; 
+    font-family: 'Darumadrop One', cursive;
     font-size: small;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.navbar-nav .nav-link {
-    font-size: small;
-    padding: 0.2rem;
-    margin: 0.05rem;
-    background-color: rgba(0, 0, 0, 0.075);
-    align-items: center;
-    align-content: center;
-}
-
-
-.bienvenidos{
-    display: flex;
-    text-align: center;
-    text-justify: center;
-    font-family: 'Darumadrop One', cursive; 
-    font-size: 3rem;
-}
-
-.bienvenidos1{
-    display: flex;
-    text-align: center;
-    text-justify: center;
-    font-family: 'Darumadrop One', cursive; 
-    font-size: 1.5rem;
-}
-
-
-/* footer */
-
-footer{
+    background-color: rgba(0, 0, 0, 0); }
+    .contenedor-contactenos header .navbar-nav .nav-link {
+      font-size: small;
+      padding: 0.2rem;
+      margin: 0.05rem;
+      background-color: rgba(0, 0, 0, 0.075);
+      align-items: center;
+      align-content: center; }
+  .contenedor-contactenos footer {
     height: 15vh;
     justify-content: space-between;
     align-items: center;
@@ -57,293 +167,792 @@ footer{
     margin-bottom: 0;
     padding: 0.5rem;
     padding-bottom: 1.5rem;
-    bottom: 0;
-}
+    bottom: 0; }
+    .contenedor-contactenos footer .marca-registrada {
+      font-size: small;
+      font-family: 'Darumadrop One', cursive; }
+    .contenedor-contactenos footer footer div a {
+      text-decoration: none; }
+    .contenedor-contactenos footer .volver {
+      border-radius: 10px;
+      background-color: rgba(240, 196, 180, 0.438);
+      font-size: x-small; }
+  .contenedor-contactenos main form fieldset {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-family: 'Darumadrop One', cursive;
+    height: 60vh; }
+  .contenedor-contactenos main form fieldset legend {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
-.marca-registrada{
-    font-size: small;
-    font-family: 'Darumadrop One', cursive; 
-}
+.contenedor-contactenos, .contenedor-historia, body .contenedor-index, .contenedor-fuego {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 25% 60% 15%; }
 
-footer div a{
-    text-decoration:none ;
-}
-/* index */
-.contenedor-index {
-    height: 100vh;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: auto ;
-    grid-template-rows: 25% 60% 15% ;
+.contenedor-historia .caja-historia .hijo-historia, .contenedor-shop .hijo-shop {
+  display: flex;
+  object-fit: contain;
+  text-align: center;
+  object-position: center; }
 
-}
+.contenedor-fuego main div div h2, .contenedor-shop main div div p {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
-.volver{
+@media screen and (min-width: 1024px) {
+  .navbar-nav .nav-link {
+    font-size: 2rem;
+    padding: 0.2rem;
+    margin: 0.2rem; }
+  .marca-registrada {
+    font-size: x-large; }
+  footer {
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 1rem 0.2rem 0rem 0.2rem;
+    padding: 0.2rem;
+    bottom: 0; }
+  .volver {
     border-radius: 10px;
-    background-color: rgba(240, 196, 180, 0.438);
-    font-size: x-small;
-}
-
-main{
-    padding: 0% 10% 0% 10%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
+    background-color: rgba(240, 196, 180, 0.473);
+    font-size: large; }
+  main form {
+    display: flex;
     align-items: center;
     justify-content: center;
-}
-/* shop */
-.main-shop{
+    font-family: 'Darumadrop One', cursive; }
+  #carousel-fuego {
+    display: none; }
+  #escritorio {
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    align-items: start;
+    height: 100vh; }
+  .hijo-fuego {
+    height: 10vh;
+    object-fit: contain;
+    padding: 1rem;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 0.9rem; }
+  .contenedor-fuego {
+    height: 140vh;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 25% 60% 15%;
+    font-size: 1rem; }
+  .contenedor-historia {
+    height: 100vh;
+    padding: 1rem; }
+  .caja-historia {
+    height: 60vh;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between; }
+  .hijo-historia {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 0.95rem; }
+  .main-shop {
     display: flex;
     align-items: center;
     align-content: center;
     flex-direction: column;
+    font-family: 'Darumadrop One', cursive; }
+  .contenedor-shop {
+    height: 100vh;
+    grid-template-rows: 25% 60% 15%; }
+  .caja-shop {
+    padding-bottom: 10%;
+    height: 100vh;
+    display: grid;
+    /*columnas*/
+    grid-template-columns: repeat(2, 50%);
+    /*filas*/
+    grid-template-rows: repeat(4, 25%);
+    gap: 1rem;
+    font-family: 'Darumadrop One', cursive; }
+  .hijo-shop {
+    height: 12vh;
+    background-color: rgba(0, 0, 0, 0.178);
+    display: flex;
+    object-fit: contain;
+    text-align: center;
+    object-position: center;
+    font-size: 1.5rem; } }
+
+@media screen and (min-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: large;
+    padding: 0.2rem;
+    margin: 0.05rem;
+    background-color: rgba(0, 0, 0, 0.075);
+    align-items: center;
+    align-content: center; }
+  footer {
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 1rem 0.2rem 0rem 0.2rem;
+    padding: 0.2rem;
+    bottom: 0; }
+    footer .marca-registrada {
+      font-size: x-large; }
+    footer .volver {
+      border-radius: 10px;
+      background-color: rgba(240, 196, 180, 0.473);
+      font-size: large; }
+  .caja-historia {
+    font-size: 1rem; }
+  main form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Darumadrop One', cursive; }
+  .hijo-shop {
+    font-size: 1.2rem; } }
+
+.contenedor-historia {
+  height: 100vh;
+  padding-top: 2rem;
+  gap: 10px; }
+  .contenedor-historia header {
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
     font-family: 'Darumadrop One', cursive;
-}
+    font-size: small;
+    background-color: rgba(0, 0, 0, 0); }
+    .contenedor-historia header .navbar-nav .nav-link {
+      font-size: small;
+      padding: 0.2rem;
+      margin: 0.05rem;
+      background-color: rgba(0, 0, 0, 0.075);
+      align-items: center;
+      align-content: center; }
+  .contenedor-historia footer {
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-bottom: 0;
+    padding: 0.5rem;
+    padding-bottom: 1.5rem;
+    bottom: 0; }
+    .contenedor-historia footer .marca-registrada {
+      font-size: small;
+      font-family: 'Darumadrop One', cursive; }
+    .contenedor-historia footer footer div a {
+      text-decoration: none; }
+    .contenedor-historia footer .volver {
+      border-radius: 10px;
+      background-color: rgba(240, 196, 180, 0.438);
+      font-size: x-small; }
+  .contenedor-historia .caja-historia {
+    height: 60vh;
+    padding: 1rem 0rem 2rem 0rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    padding-bottom: 10%;
+    gap: 1rem;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 0.65rem; }
+    .contenedor-historia .caja-historia .hijo-historia {
+      background-color: rgba(0, 0, 0, 0.075);
+      flex-direction: row; }
+    .contenedor-historia .caja-historia main div div img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
 
-main h1{
-    font-size: 3rem;
-}
+.contenedor-contactenos, .contenedor-historia, body .contenedor-index, .contenedor-fuego {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 25% 60% 15%; }
 
-.caja-shop{
+.contenedor-historia .caja-historia .hijo-historia, .contenedor-shop .hijo-shop {
+  display: flex;
+  object-fit: contain;
+  text-align: center;
+  object-position: center; }
+
+.contenedor-fuego main div div h2, .contenedor-shop main div div p {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+@media screen and (min-width: 1024px) {
+  .navbar-nav .nav-link {
+    font-size: 2rem;
+    padding: 0.2rem;
+    margin: 0.2rem; }
+  .marca-registrada {
+    font-size: x-large; }
+  footer {
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 1rem 0.2rem 0rem 0.2rem;
+    padding: 0.2rem;
+    bottom: 0; }
+  .volver {
+    border-radius: 10px;
+    background-color: rgba(240, 196, 180, 0.473);
+    font-size: large; }
+  main form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Darumadrop One', cursive; }
+  #carousel-fuego {
+    display: none; }
+  #escritorio {
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    align-items: start;
+    height: 100vh; }
+  .hijo-fuego {
+    height: 10vh;
+    object-fit: contain;
+    padding: 1rem;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 0.9rem; }
+  .contenedor-fuego {
+    height: 140vh;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 25% 60% 15%;
+    font-size: 1rem; }
+  .contenedor-historia {
+    height: 100vh;
+    padding: 1rem; }
+  .caja-historia {
+    height: 60vh;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between; }
+  .hijo-historia {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 0.95rem; }
+  .main-shop {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    font-family: 'Darumadrop One', cursive; }
+  .contenedor-shop {
+    height: 100vh;
+    grid-template-rows: 25% 60% 15%; }
+  .caja-shop {
+    padding-bottom: 10%;
+    height: 100vh;
+    display: grid;
+    /*columnas*/
+    grid-template-columns: repeat(2, 50%);
+    /*filas*/
+    grid-template-rows: repeat(4, 25%);
+    gap: 1rem;
+    font-family: 'Darumadrop One', cursive; }
+  .hijo-shop {
+    height: 12vh;
+    background-color: rgba(0, 0, 0, 0.178);
+    display: flex;
+    object-fit: contain;
+    text-align: center;
+    object-position: center;
+    font-size: 1.5rem; } }
+
+@media screen and (min-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: large;
+    padding: 0.2rem;
+    margin: 0.05rem;
+    background-color: rgba(0, 0, 0, 0.075);
+    align-items: center;
+    align-content: center; }
+  footer {
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 1rem 0.2rem 0rem 0.2rem;
+    padding: 0.2rem;
+    bottom: 0; }
+    footer .marca-registrada {
+      font-size: x-large; }
+    footer .volver {
+      border-radius: 10px;
+      background-color: rgba(240, 196, 180, 0.473);
+      font-size: large; }
+  .caja-historia {
+    font-size: 1rem; }
+  main form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Darumadrop One', cursive; }
+  .hijo-shop {
+    font-size: 1.2rem; } }
+
+body {
+  /* fondo */
+  background-image: url(../img/grey-aesthetic-desktop-oz7r58cmboaf1948.jpg); }
+  body .contenedor-index {
+    height: 100vh;
+    padding: 1rem; }
+    body .contenedor-index header {
+      height: 25vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      font-family: 'Darumadrop One', cursive;
+      font-size: small;
+      background-color: rgba(0, 0, 0, 0); }
+      body .contenedor-index header .navbar-nav .nav-link {
+        font-size: small;
+        padding: 0.2rem;
+        margin: 0.05rem;
+        background-color: rgba(0, 0, 0, 0.075);
+        align-items: center;
+        align-content: center; }
+    body .contenedor-index footer {
+      height: 15vh;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      margin-bottom: 0;
+      padding: 0.5rem;
+      padding-bottom: 1.5rem;
+      bottom: 0; }
+      body .contenedor-index footer .marca-registrada {
+        font-size: small;
+        font-family: 'Darumadrop One', cursive; }
+      body .contenedor-index footer footer div a {
+        text-decoration: none; }
+      body .contenedor-index footer .volver {
+        border-radius: 10px;
+        background-color: rgba(240, 196, 180, 0.438);
+        font-size: x-small; }
+    body .contenedor-index .bienvenidos {
+      font-size: 2.5rem;
+      display: flex;
+      text-align: center;
+      text-justify: center;
+      font-family: 'Darumadrop One', cursive;
+      align-items: center;
+      justify-content: center; }
+    body .contenedor-index .bienvenidos1 {
+      font-size: 1rem;
+      display: flex;
+      text-align: center;
+      text-justify: center;
+      font-family: 'Darumadrop One', cursive; }
+    body .contenedor-index main {
+      padding: 0% 10% 0% 10%;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 100%;
+      align-items: center;
+      justify-content: center; }
+
+.contenedor-contactenos, .contenedor-historia, body .contenedor-index, .contenedor-fuego {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 25% 60% 15%; }
+
+.contenedor-historia .caja-historia .hijo-historia, .contenedor-shop .hijo-shop {
+  display: flex;
+  object-fit: contain;
+  text-align: center;
+  object-position: center; }
+
+.contenedor-fuego main div div h2, .contenedor-shop main div div p {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+@media screen and (min-width: 1024px) {
+  .navbar-nav .nav-link {
+    font-size: 2rem;
+    padding: 0.2rem;
+    margin: 0.2rem; }
+  .marca-registrada {
+    font-size: x-large; }
+  footer {
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 1rem 0.2rem 0rem 0.2rem;
+    padding: 0.2rem;
+    bottom: 0; }
+  .volver {
+    border-radius: 10px;
+    background-color: rgba(240, 196, 180, 0.473);
+    font-size: large; }
+  main form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Darumadrop One', cursive; }
+  #carousel-fuego {
+    display: none; }
+  #escritorio {
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    align-items: start;
+    height: 100vh; }
+  .hijo-fuego {
+    height: 10vh;
+    object-fit: contain;
+    padding: 1rem;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 0.9rem; }
+  .contenedor-fuego {
+    height: 140vh;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 25% 60% 15%;
+    font-size: 1rem; }
+  .contenedor-historia {
+    height: 100vh;
+    padding: 1rem; }
+  .caja-historia {
+    height: 60vh;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between; }
+  .hijo-historia {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 0.95rem; }
+  .main-shop {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    font-family: 'Darumadrop One', cursive; }
+  .contenedor-shop {
+    height: 100vh;
+    grid-template-rows: 25% 60% 15%; }
+  .caja-shop {
+    padding-bottom: 10%;
+    height: 100vh;
+    display: grid;
+    /*columnas*/
+    grid-template-columns: repeat(2, 50%);
+    /*filas*/
+    grid-template-rows: repeat(4, 25%);
+    gap: 1rem;
+    font-family: 'Darumadrop One', cursive; }
+  .hijo-shop {
+    height: 12vh;
+    background-color: rgba(0, 0, 0, 0.178);
+    display: flex;
+    object-fit: contain;
+    text-align: center;
+    object-position: center;
+    font-size: 1.5rem; } }
+
+@media screen and (min-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: large;
+    padding: 0.2rem;
+    margin: 0.05rem;
+    background-color: rgba(0, 0, 0, 0.075);
+    align-items: center;
+    align-content: center; }
+  footer {
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 1rem 0.2rem 0rem 0.2rem;
+    padding: 0.2rem;
+    bottom: 0; }
+    footer .marca-registrada {
+      font-size: x-large; }
+    footer .volver {
+      border-radius: 10px;
+      background-color: rgba(240, 196, 180, 0.473);
+      font-size: large; }
+  .caja-historia {
+    font-size: 1rem; }
+  main form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Darumadrop One', cursive; }
+  .hijo-shop {
+    font-size: 1.2rem; } }
+
+.contenedor-fuego {
+  height: 140vh;
+  padding: 1rem;
+  font-size: 0.75rem; }
+  .contenedor-fuego header {
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-family: 'Darumadrop One', cursive;
+    font-size: small;
+    background-color: rgba(0, 0, 0, 0); }
+    .contenedor-fuego header .navbar-nav .nav-link {
+      font-size: small;
+      padding: 0.2rem;
+      margin: 0.05rem;
+      background-color: rgba(0, 0, 0, 0.075);
+      align-items: center;
+      align-content: center; }
+  .contenedor-fuego footer {
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-bottom: 0;
+    padding: 0.5rem;
+    padding-bottom: 1.5rem;
+    bottom: 0; }
+    .contenedor-fuego footer .marca-registrada {
+      font-size: small;
+      font-family: 'Darumadrop One', cursive; }
+    .contenedor-fuego footer footer div a {
+      text-decoration: none; }
+    .contenedor-fuego footer .volver {
+      border-radius: 10px;
+      background-color: rgba(240, 196, 180, 0.438);
+      font-size: x-small; }
+  .contenedor-fuego #escritorio {
+    display: none; }
+  .contenedor-fuego #carouselWithControls {
+    background-color: rgba(0, 0, 0, 0.075); }
+
+.contenedor-contactenos, .contenedor-historia, body .contenedor-index, .contenedor-fuego {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 25% 60% 15%; }
+
+.contenedor-historia .caja-historia .hijo-historia, .contenedor-shop .hijo-shop {
+  display: flex;
+  object-fit: contain;
+  text-align: center;
+  object-position: center; }
+
+.contenedor-fuego main div div h2, .contenedor-shop main div div p {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+@media screen and (min-width: 1024px) {
+  .navbar-nav .nav-link {
+    font-size: 2rem;
+    padding: 0.2rem;
+    margin: 0.2rem; }
+  .marca-registrada {
+    font-size: x-large; }
+  footer {
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 1rem 0.2rem 0rem 0.2rem;
+    padding: 0.2rem;
+    bottom: 0; }
+  .volver {
+    border-radius: 10px;
+    background-color: rgba(240, 196, 180, 0.473);
+    font-size: large; }
+  main form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Darumadrop One', cursive; }
+  #carousel-fuego {
+    display: none; }
+  #escritorio {
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    align-items: start;
+    height: 100vh; }
+  .hijo-fuego {
+    height: 10vh;
+    object-fit: contain;
+    padding: 1rem;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 0.9rem; }
+  .contenedor-fuego {
+    height: 140vh;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 25% 60% 15%;
+    font-size: 1rem; }
+  .contenedor-historia {
+    height: 100vh;
+    padding: 1rem; }
+  .caja-historia {
+    height: 60vh;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between; }
+  .hijo-historia {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 0.95rem; }
+  .main-shop {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    font-family: 'Darumadrop One', cursive; }
+  .contenedor-shop {
+    height: 100vh;
+    grid-template-rows: 25% 60% 15%; }
+  .caja-shop {
+    padding-bottom: 10%;
+    height: 100vh;
+    display: grid;
+    /*columnas*/
+    grid-template-columns: repeat(2, 50%);
+    /*filas*/
+    grid-template-rows: repeat(4, 25%);
+    gap: 1rem;
+    font-family: 'Darumadrop One', cursive; }
+  .hijo-shop {
+    height: 12vh;
+    background-color: rgba(0, 0, 0, 0.178);
+    display: flex;
+    object-fit: contain;
+    text-align: center;
+    object-position: center;
+    font-size: 1.5rem; } }
+
+@media screen and (min-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: large;
+    padding: 0.2rem;
+    margin: 0.05rem;
+    background-color: rgba(0, 0, 0, 0.075);
+    align-items: center;
+    align-content: center; }
+  footer {
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 1rem 0.2rem 0rem 0.2rem;
+    padding: 0.2rem;
+    bottom: 0; }
+    footer .marca-registrada {
+      font-size: x-large; }
+    footer .volver {
+      border-radius: 10px;
+      background-color: rgba(240, 196, 180, 0.473);
+      font-size: large; }
+  .caja-historia {
+    font-size: 1rem; }
+  main form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Darumadrop One', cursive; }
+  .hijo-shop {
+    font-size: 1.2rem; } }
+
+.contenedor-shop {
+  height: 150vh;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 20% 70% 10%; }
+  .contenedor-shop header {
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-family: 'Darumadrop One', cursive;
+    font-size: small;
+    background-color: rgba(0, 0, 0, 0); }
+    .contenedor-shop header .navbar-nav .nav-link {
+      font-size: small;
+      padding: 0.2rem;
+      margin: 0.05rem;
+      background-color: rgba(0, 0, 0, 0.075);
+      align-items: center;
+      align-content: center; }
+  .contenedor-shop footer {
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-bottom: 0;
+    padding: 0.5rem;
+    padding-bottom: 1.5rem;
+    bottom: 0; }
+    .contenedor-shop footer .marca-registrada {
+      font-size: small;
+      font-family: 'Darumadrop One', cursive; }
+    .contenedor-shop footer footer div a {
+      text-decoration: none; }
+    .contenedor-shop footer .volver {
+      border-radius: 10px;
+      background-color: rgba(240, 196, 180, 0.438);
+      font-size: x-small; }
+  .contenedor-shop .main-shop {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    font-family: 'Darumadrop One', cursive; }
+  .contenedor-shop main h1 {
+    font-size: 3rem; }
+  .contenedor-shop .caja-shop {
     padding-bottom: 10%;
     height: 100vh;
     display: grid;
     /*columnas*/
     grid-template-columns: 100%;
     /*filas*/
-    grid-template-rows: repeat(8, 10%) ;
+    grid-template-rows: repeat(8, 10%);
     gap: 1rem;
-    font-family: 'Darumadrop One', cursive;
-}
-
-.hijo-shop{
-    background-color: rgba(0, 0, 0, 0.178);
-    display: flex;
-    object-fit: contain;
-    text-align: center;
-    object-position: center;
-}
-
-main div div p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.contenedor-shop {
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: auto ;
-    grid-template-rows: 25% 60% 15% ;
-}
-
-/* contactenos */
-
-main form fieldset{
-    display: flex;
-    justify-content:center;
-    align-items: left;
-    flex-direction: column;
-    font-size: 1.5rem;
-    font-family: 'Darumadrop One', cursive;
-}
-main form fieldset legend{
-    font-size: 3rem;
-}
-
-/* historia */
-
-.contenedor-historia{
-    height: 100vh; 
-    display: grid;
-    padding-top: 2rem;
-    grid-template-columns: auto ;
-    grid-template-rows: 25% 60% 15% ;
-    gap: 10px;
-}
-
-.hijo-historia{
-    
-    background-color: rgba(0, 0, 0, 0.178);
-    display: flex;
-    object-fit: contain;
-    text-align: center;
-    object-position: center;
-    flex-direction: row;
-}
-
-.caja-historia{
-    height:65vh;
-    padding: 1rem 0rem 2rem 0rem;
-    display: grid;
-    grid-template-columns: 100% ;
-    grid-template-rows: 50% 50% ;
-    padding-bottom: 10%;
-    gap: 1rem;
-    font-family: 'Darumadrop One', cursive;
-    font-size: 0.75rem;
-}
-
-main div div img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain ;
-}
-
-/* proyecto-fuego */
-
-.contenedor-fuego{
-    height: 120vh;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: auto ;
-    grid-template-rows: 25% 60% 15% ;
-    font-size: 0.75rem;
-}
-
-#escritorio{
-    display: none;
-}
-
-main div div h2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#carouselWithControls{
-    background-color: rgba(0, 0, 0, 0.178);
-}
-
-
-/* responsive */
-
-@media screen and (min-width:1024px) {
-
-    .navbar-nav .nav-link{
-        font-size: 2rem;
-        padding: 0.2rem;
-    margin: 0.2rem;
-    }
-    .marca-registrada{
-        font-size: x-large;    
-    }
-
-    footer{
-        height: 15vh;
-        justify-content: space-between;
-        align-items: center;
-        display: flex;
-        margin: 1rem 0.2rem 0rem 0.2rem;
-        padding: 0.2rem;
-        bottom: 0;
-    }
-
-    .volver{
-        border-radius: 10px;
-        background-color: rgba(240, 196, 180, 0.473);
-        font-size: large;
-    }
-
-    main form {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Darumadrop One', cursive;
-    }
-
-    #carousel-fuego{
-        display: none;
-    }
-
-    #escritorio{
-        display: block;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr) ;
-        gap: 1rem;
-        justify-items: center;
-        align-items: start;
-        height: 100vh;
-    }
-
-    .hijo-fuego{
-        height: 10vh;
-        object-fit: contain;
-        padding: 1rem;
-        font-family: 'Darumadrop One', cursive;
-    }
-
-    .contenedor-fuego{
-        height: 140vh;
-        padding: 1rem;
-        display: grid;
-        grid-template-columns: auto ;
-        grid-template-rows: 25% 60% 15% ;
-        font-size: 1rem;
-        
-    }
-
-    .contenedor-historia{
-        height: 100vh;
-        padding: 1rem;
-    }
-    .caja-historia{
-        height: 60vh;
-        display: flex;
-        align-content: space-between;
-        justify-content: space-between;
-        
-    }
-    .hijo-historia{
-        display: flex;
-        flex-wrap:nowrap;
-        font-size: 1.2rem;
-    }
-
-    .main-shop{
-        display: flex;
-        align-items: center;
-        align-content: center;
-        flex-direction: column;
-        font-family: 'Darumadrop One', cursive;
-    }
-    
-    .contenedor-shop{
-        height: 100vh;
-        grid-template-rows: 25% 60% 15% ;
-
-    }
-
-    .caja-shop{
-        padding-bottom: 10%;
-        height: 100vh;
-        display: grid;
-        /*columnas*/
-        grid-template-columns: repeat(2, 50%);
-        /*filas*/
-        grid-template-rows: repeat(4, 25%) ;
-        gap: 1rem;
-        font-family: 'Darumadrop One', cursive;
-
-    }
-    
-    .hijo-shop{
-        height: 12vh;
-        background-color: rgba(0, 0, 0, 0.178);
-        display: flex;
-        object-fit: contain;
-        text-align: center;
-        object-position: center;
-        font-size: 1.5rem;
-        
-    }
-
-
-
-}
-
-
-
+    font-family: 'Darumadrop One', cursive; }
+  .contenedor-shop .hijo-shop {
+    background-color: rgba(0, 0, 0, 0.178); }

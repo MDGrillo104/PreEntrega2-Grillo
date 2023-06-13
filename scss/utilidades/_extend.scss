@@ -1,0 +1,19 @@
+%grid{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: 25% 60% 15% ;
+}
+
+%objeto{
+    display: flex;
+    object-fit: contain;
+    text-align: center;
+    object-position: center;
+}
+
+%display-align-justify{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
