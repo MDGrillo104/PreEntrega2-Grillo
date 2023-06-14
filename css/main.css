@@ -179,7 +179,6 @@ body header {
       background-color: rgba(0, 0, 0, 0.075);
       flex-direction: row; }
     .contenedor-historia .caja-historia main div div img {
-      width: 100%;
       height: 100%;
       object-fit: contain; }
 
