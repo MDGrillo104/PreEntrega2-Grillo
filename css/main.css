@@ -145,7 +145,7 @@ body header {
     font-size: 1.2rem; } }
 
 .contenedor-contactenos {
-  height: 100vh;
+  height: 120vh;
   padding: 1rem; }
   .contenedor-contactenos main form fieldset {
     display: inline-block;
@@ -156,7 +156,7 @@ body header {
     font-family: 'Darumadrop One', cursive;
     height: 60vh; }
   .contenedor-contactenos main form fieldset legend {
-    font-size: 3rem;
+    font-size: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -167,14 +167,14 @@ body header {
   gap: 10px; }
   .contenedor-historia .caja-historia {
     height: 60vh;
-    padding: 1rem 0rem 2rem 0rem;
+    padding: 1rem 0rem 1rem 0rem;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
     padding-bottom: 10%;
     gap: 1rem;
     font-family: 'Darumadrop One', cursive;
-    font-size: 0.65rem; }
+    font-size: 0.55rem; }
     .contenedor-historia .caja-historia .hijo-historia {
       background-color: rgba(0, 0, 0, 0.075);
       flex-direction: row; }

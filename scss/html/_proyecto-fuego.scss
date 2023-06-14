@@ -3,6 +3,7 @@
     padding: 1rem;
     @extend %grid;
     font-size: 0.75rem;
+    
 
     #escritorio{
         display: none;
@@ -14,6 +15,7 @@
 
     #carouselWithControls{
         background-color:$bg-colour;
+        
     }
 
 }

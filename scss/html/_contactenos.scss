@@ -1,5 +1,5 @@
 .contenedor-contactenos {
-    height: 100vh;
+    height: 120vh;
     padding: 1rem;
     @extend %grid;
 
@@ -14,7 +14,7 @@
     }
 
     main form fieldset legend{
-        font-size: 3rem;
+        font-size: 2.5rem;
         display: flex;
         justify-content:center;
         align-items: center;
