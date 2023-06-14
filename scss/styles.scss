@@ -17,55 +17,59 @@
 
 
 body{
+
     background-image: $fondo;
     
-    header{
-        @extend %header;
-    
+   
+        
+        header{
+            @extend %header;
+        
+            .navbar-nav .nav-link {
+                font-size: small;
+                padding: 0.2rem;
+                margin: 0.05rem;
+                background-color: $bg-colour;
+                align-items: center;
+                align-content: center;
+            }   
+        }
 
-        .navbar-nav .nav-link {
-            font-size: small;
-            padding: 0.2rem;
-            margin: 0.05rem;
-            background-color: $bg-colour;
+        main{
+            padding: 0% 10% 0% 10%;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 100%;
             align-items: center;
-            align-content: center;
-        }   
-    }
+            justify-content: center;
+            }
 
-    main{
-        padding: 0% 10% 0% 10%;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 100%;
-        align-items: center;
-        justify-content: center;
+        footer{
+            height: 15vh;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            margin-bottom: 0;
+            padding: 0.5rem;
+            padding-bottom: 1.5rem;
+            bottom: 0;
+
+            .marca-registrada{
+                font-size: small;
+                font-family: 'Darumadrop One', cursive; 
+            }
+
+            footer div a{
+                text-decoration:$text-decoration ;
+            }
+
+            .volver{
+                border-radius: 10px;
+                background-color: rgba(240, 196, 180, 0.438);
+                font-size: x-small;
+            }
         }
-
-    footer{
-        height: 15vh;
-        justify-content: space-between;
-        align-items: center;
-        display: flex;
-        margin-bottom: 0;
-        padding: 0.5rem;
-        padding-bottom: 1.5rem;
-        bottom: 0;
-
-        .marca-registrada{
-            font-size: small;
-            font-family: 'Darumadrop One', cursive; 
-        }
-
-        footer div a{
-            text-decoration:none ;
-        }
-
-        .volver{
-            border-radius: 10px;
-            background-color: rgba(240, 196, 180, 0.438);
-            font-size: x-small;
-        }
-    }
-
 }
+   
+
+

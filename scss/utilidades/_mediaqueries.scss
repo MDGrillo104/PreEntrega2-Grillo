@@ -1,4 +1,49 @@
 
+@media screen and (min-width:768px){
+
+
+    .navbar-nav .nav-link {
+        font-size: large;
+        padding: 0.2rem;
+        margin: 0.05rem;
+        background-color: rgba(0, 0, 0, 0.075);
+        align-items: center;
+        align-content: center;
+    }
+
+    footer{
+        
+        margin: 1rem 0.2rem 0rem 0.2rem;
+        padding: 0.2rem;
+   
+        .marca-registrada{
+                font-size: x-large;    
+            }
+
+        .volver{
+            font-size: large;
+        }
+    }
+
+    .caja-historia{
+        
+        font-size: 1rem;
+    }
+
+    main form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Darumadrop One', cursive;
+    }
+
+    .hijo-shop{
+        font-size: 1.2rem;
+        
+    }
+}
+
+
 @media screen and (min-width:1024px) {
 
     .navbar-nav .nav-link{
@@ -7,7 +52,6 @@
         margin: 0.2rem;
     }
     
-
     footer{
         
         height: 15vh;
@@ -27,7 +71,6 @@
             font-size: large;
         }
     }
-
 
     main form {
         display: flex;
@@ -116,56 +159,3 @@
         } 
     }
 }
-
-@media screen and (min-width:768px){
-
-
-    .navbar-nav .nav-link {
-        font-size: large;
-        padding: 0.2rem;
-        margin: 0.05rem;
-        background-color: rgba(0, 0, 0, 0.075);
-        align-items: center;
-        align-content: center;
-    }
-
-
-    footer{
-        height: 15vh;
-        justify-content: space-between;
-        align-items: center;
-        display: flex;
-        margin: 1rem 0.2rem 0rem 0.2rem;
-        padding: 0.2rem;
-        bottom: 0;
-   
-        .marca-registrada{
-                font-size: x-large;    
-            }
-
-        .volver{
-            border-radius: 10px;
-            background-color: rgba(240, 196, 180, 0.473);
-            font-size: large;
-        }
-    }
-
-    .caja-historia{
-        
-        font-size: 1rem;
-    }
-
-    main form {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Darumadrop One', cursive;
-    }
-
-    .hijo-shop{
-        font-size: 1.2rem;
-        
-    }
-}
-
-
