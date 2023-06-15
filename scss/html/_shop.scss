@@ -7,33 +7,35 @@
 
     .main-shop{
         @include main-shop;
-    }
+   
+        main h1{
+            font-size: 3rem;
+        }
+        
 
-    main h1{
-        font-size: 3rem;
-    }
+        .caja-shop{
+            padding-bottom: 10%;
+            height: 100vh;
+            display: grid;
+            /*columnas*/
+            grid-template-columns: 100%;
+            /*filas*/
+            grid-template-rows: repeat(8, 10%) ;
+            gap: 1rem;
+            font-family: 'Darumadrop One', cursive;
+        
 
-    .caja-shop{
-        padding-bottom: 10%;
-        height: 100vh;
-        display: grid;
-        /*columnas*/
-        grid-template-columns: 100%;
-        /*filas*/
-        grid-template-rows: repeat(8, 10%) ;
-        gap: 1rem;
-        font-family: 'Darumadrop One', cursive;
+            .hijo-shop{
+                background-color: rgba(0, 0, 0, 0.178);
+                @extend %objeto;
+           
+        
+                main div div p{
+                    @extend %display-align-justify;
+                }
+            }
+        }
     }
-
-    .hijo-shop{
-        background-color: rgba(0, 0, 0, 0.178);
-        @extend %objeto;
-    }
-
-    main div div p{
-        @extend %display-align-justify;
-    }
-
 }
 
 
