@@ -1,3 +1,8 @@
+@import "../utilidades/mediaqueries";
+@import "../utilidades/extend";
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
 body{
 
     background-image: $fondo;
@@ -6,15 +11,8 @@ body{
         
         header{
             @extend %header;
-        
-            .navbar-nav .nav-link {
-                font-size: small;
-                padding: 0.2rem;
-                margin: 0.05rem;
-                background-color: $bg-colour;
-                align-items: center;
-                align-content: center;
-            }   
+                .navbar-nav .nav-link{
+                @include navbar (small)}
         }
 
         main{
@@ -53,5 +51,3 @@ body{
         }
 }
    
-
-

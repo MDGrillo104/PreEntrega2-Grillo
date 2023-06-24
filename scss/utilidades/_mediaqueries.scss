@@ -1,14 +1,12 @@
+@import "utilidades/extend";
+@import "utilidades/mixin";
+@import "utilidades/variables";
 
 @media screen and (min-width:768px){
 
 
     .navbar-nav .nav-link {
-        font-size: large;
-        padding: 0.2rem;
-        margin: 0.05rem;
-        background-color: rgba(0, 0, 0, 0.075);
-        align-items: center;
-        align-content: center;
+            @include navbar (large);
     }
 
     footer{
@@ -41,18 +39,16 @@
         font-size: 1.2rem;
         
     }
+
 }
 
-
 @media screen and (min-width:1024px) {
-
-
-    .navbar-nav .nav-link{
-        font-size: 2rem;
-        padding: 0.2rem;
-        margin: 0.2rem;
-    }
     
+     .navbar-nav{
+            @include  navbar (large);}
+        
+    
+
     footer{
         
         height: 15vh;
@@ -133,6 +129,7 @@
             }
         }
     }
+
     .contenedor-shop{
         height: 100vh;
         grid-template-rows: 25% 60% 15% ;
